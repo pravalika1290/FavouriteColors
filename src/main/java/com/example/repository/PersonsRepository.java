@@ -12,4 +12,4 @@ public interface PersonsRepository extends JpaRepository<Persons, Integer> {
 
     @Query(value = "SELECT c FROM Persons c WHERE c.color = :color")
     List<Persons> getPersonsListByColor(String color);
-}
+}// i have not found color in csv file, so i gave information to take color
